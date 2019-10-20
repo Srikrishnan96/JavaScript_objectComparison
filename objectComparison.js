@@ -1,19 +1,12 @@
 function objectComparison(obj1, obj2){
-	let differentObjects = false;
+	let identical = true;
 	for (key in obj1) {
-		if(obj2[key] !== obj1[key]) {
-			differentObjects = true;
-		}
+		if(obj2[key] !== obj1[key]) 
+			identical = false;
 	}
-
 	for (key in obj2) {
-		if(obj1[key] !== obj2[key]) {
-			differentObjects = true;
-		}
+		if(obj1[key] !== obj2[key]) 
+			identical = false;
 	}
-
-	if(differentObjects){
-		return 'Objects are different';
-	}
-	return 'Objects are identical';
+	return identical;
 }
