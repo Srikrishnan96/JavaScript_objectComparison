@@ -1,5 +1,5 @@
-# objectComparison O(n)
-## A logic that checks if two objects are identical
+# objectComparison
+## A logic that checks if two objects are identical in O(n)
 ### Output
 Returns true if the two objects passed into the function are identical
 
